@@ -1,0 +1,73 @@
+#loader {
+    text-align: center!important;
+    width: 100%!important;
+    position: relative!important;
+    overflow: hidden!important;
+    max-width: 35rem!important;
+    height: 30rem!important;
+    margin: 0 auto!important;
+}
+
+.wait {
+    margin: 9rem 0!important;
+}
+
+.plane {
+    position: absolute!important;
+    margin: 0 auto!important;
+    width: 100%!important;
+}
+
+.plane-img {
+    -webkit-animation: spin 2.5s linear infinite!important;
+    -moz-animation: spin 2.5s linear infinite!important;
+    animation: spin 2.5s linear infinite!important;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg)!important;
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg)!important;
+        transform: rotate(360deg)!important;
+    }
+}
+
+
+.earth-wrapper {
+    position: absolute!important;
+    margin: 0 auto!important;
+    width: 100%!important;
+    padding-top: 2.7rem!important;
+}
+
+.earth {
+    width: 160px!important;
+    height: 160px!important;
+    background: url("https://zupimages.net/up/19/34/6vlb.gif")!important;
+    border-radius: 100%!important;
+    background-size: 340px!important;
+    animation: earthAnim 12s infinite linear!important;
+    margin: 0 auto!important;
+    border: 1px solid #CDD1D3!important;
+}
+
+@keyframes earthAnim {
+    0% {
+        background-position-x: 0!important;
+    }
+
+    100% {
+        background-position-x: -340px!important;
+    }
+}

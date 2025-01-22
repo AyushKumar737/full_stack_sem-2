@@ -1,0 +1,799 @@
+@charset "utf-8";
+
+@import url("font-awesome.min.css");
+@import url("framework.css");
+
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+.row1 {
+	border-bottom: 1px solid;
+}
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+
+#header #logo {
+	margin: 30px 0 0 0;
+}
+
+#header #logo h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 22px;
+}
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro {
+	padding: 200px 0;
+}
+
+#pageintro * {
+	word-wrap: break-word;
+}
+
+#pageintro .transbox {
+	display: block;
+	max-width: 50%;
+	padding: 30px;
+}
+
+#pageintro .heading {
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+#pageintro p {
+	margin: 0;
+	padding: 0;
+	font-size: 1.2rem;
+}
+
+#pageintro footer {
+	margin-top: 30px;
+}
+
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container {
+	padding: 100px 0;
+}
+
+/* Content */
+
+.sectiontitle {
+	display: block;
+	max-width: 55%;
+	margin: 0 auto 80px;
+	text-align: center;
+}
+
+.sectiontitle * {
+	margin: 0;
+}
+
+
+.testimonials article * {
+	margin: 0;
+	padding: 0;
+}
+
+.testimonials article img {
+	margin-bottom: 20px;
+	border-radius: 50%;
+}
+
+.testimonials article blockquote {
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.testimonials article blockquote::before {
+	top: 5px;
+	left: 5px;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+/* .testimonials article .heading {} */
+
+.testimonials article em {
+	display: block;
+	margin-top: -5px;
+	font-size: .8rem;
+	font-style: normal;
+}
+
+.elements li:nth-child(-n+3) {
+	margin-bottom: 50px;
+}
+
+/* Adds bottom margin to the first two elements only */
+.elements>li:last-child {
+	margin-bottom: 0;
+}
+
+/* Used when elements stack in small viewports */
+.elements article {
+	display: block;
+	position: relative;
+	min-height: 80px;
+	padding: 0 0 0 70px;
+}
+
+.elements article::before,
+.elements article::after {
+	display: table;
+	content: "";
+}
+
+.elements article::after {
+	clear: both;
+}
+
+.elements article * {
+	margin: 0 0 15px 0;
+}
+
+.elements article> :last-child {
+	margin-bottom: 0;
+}
+
+.elements article i {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	line-height: 48px;
+	margin: 0;
+	border: 1px solid;
+	text-align: center;
+	font-size: 20px;
+}
+
+.elements article .heading {
+	font-size: 1.2rem;
+}
+
+
+.latest article figure {
+	display: block;
+	position: relative;
+}
+
+/* .latest article figure img {} */
+
+.latest article figure figcaption {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 50px;
+}
+
+.latest article figure figcaption * {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-style: normal;
+	line-height: 1;
+}
+
+.latest article figure figcaption time {
+	width: 100%;
+}
+
+.latest article figure figcaption time strong {
+	padding: 12px 0;
+	font-size: 18px;
+}
+
+.latest article figure figcaption time em {
+	padding: 8px 0;
+}
+
+.latest article .txtwrap {
+	padding: 25px 20px;
+}
+
+.latest article .txtwrap .heading {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+/* .latest article .txtwrap .meta {} */
+
+.latest article .txtwrap .meta li {
+	display: inline-block;
+	font-size: .8rem;
+}
+
+.latest article .txtwrap .meta li::after {
+	margin-left: 5px;
+	content: "|";
+}
+
+.latest article .txtwrap .meta li:last-child::after {
+	margin: 0;
+	content: "";
+}
+
+/* .latest article .txtwrap p {} */
+
+/* .latest article .txtwrap footer {} */
+
+/* Comments */
+#comments ul {
+	margin: 0 0 40px 0;
+	padding: 0;
+	list-style: none;
+}
+
+#comments li {
+	margin: 0 0 10px 0;
+	padding: 15px;
+}
+
+#comments .avatar {
+	float: right;
+	margin: 0 0 10px 10px;
+	padding: 3px;
+	border: 1px solid;
+}
+
+#comments address {
+	font-weight: bold;
+}
+
+#comments time {
+	font-size: smaller;
+}
+
+#comments .comcont {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#comments .comcont p {
+	margin: 10px 5px 10px 0;
+	padding: 0;
+}
+
+#comments form {
+	display: block;
+	width: 100%;
+}
+
+#comments input,
+#comments textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+}
+
+#comments textarea {
+	overflow: auto;
+}
+
+#comments div {
+	margin-bottom: 15px;
+}
+
+#comments input[type="submit"],
+#comments input[type="reset"] {
+	display: inline-block;
+	width: auto;
+	min-width: 150px;
+	margin: 0;
+	padding: 8px 5px;
+	cursor: pointer;
+}
+
+/* Sidebar */
+/* .container .sidebar {} */
+
+.sidebar .sdb_holder {
+	margin-bottom: 50px;
+}
+
+.sidebar .sdb_holder:last-child {
+	margin-bottom: 0;
+}
+
+
+
+
+/* Tables
+--------------------------------------------------------------------------------------------------------------- */
+table,
+th,
+td {
+	border: 1px solid;
+	border-collapse: collapse;
+	vertical-align: top;
+}
+
+table,
+th {
+	table-layout: auto;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+th,
+td {
+	padding: 5px 8px;
+}
+
+td {
+	border-width: 0 1px;
+}
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.faico li {
+	display: inline-block;
+	margin: 8px 5px 0 0;
+	padding: 0;
+	line-height: normal;
+}
+
+.faico li:last-child {
+	margin-right: 0;
+}
+
+.faico a {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.faico a {
+	color: #FFFFFF;
+	background-color: #0F1620;
+}
+
+/* .faico a:hover {} */
+
+.faicon-dribble:hover {
+	background-color: #EA4C89;
+}
+
+.faicon-facebook:hover {
+	background-color: #3B5998;
+}
+
+.faicon-google-plus:hover {
+	background-color: #DB4A39;
+}
+
+.faicon-linkedin:hover {
+	background-color: #0E76A8;
+}
+
+.faicon-twitter:hover {
+	background-color: #00ACEE;
+}
+
+.faicon-vk:hover {
+	background-color: #4E658E;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body {
+	color: #A8A7A6;
+	background-color: #0F1620;
+}
+
+a {
+	color: #15AD72;
+}
+
+a:active,
+a:focus {
+	background: transparent;
+}
+
+/* IE10 + 11 Bugfix - prevents grey background */
+hr,
+.borderedbox {
+	border-color: #F4F4F4;
+}
+
+label span {
+	color: #FF0000;
+	background-color: inherit;
+}
+
+input:focus,
+textarea:focus,
+*:required:focus {
+	border-color: #15AD72;
+}
+
+.overlay {
+	color: #FFFFFF;
+	background-color: inherit;
+}
+
+.overlay::after {
+	color: inherit;
+	background-color: rgba(27, 32, 38, .55);
+	/* #1B2026 */
+}
+
+.overlay.light {
+	color: #474747;
+}
+
+.overlay.light::after {
+	background-color: rgba(255, 255, 255, .8);
+}
+
+.overlay.coloured::after {
+	background-color: rgba(21, 173, 114, .4);
+	/* #15AD72 */
+}
+
+.btn,
+.btn.inverse:hover {
+	color: #FFFFFF;
+	background-color: #15AD72;
+	border-color: #15AD72;
+}
+
+.btn:hover,
+.btn.inverse {
+	color: inherit;
+	background-color: transparent;
+	border-color: inherit;
+}
+
+
+/* Rows */
+.row1 {
+	color: #FFFFFF;
+	background-color: rgba(27, 32, 38, .3);
+	/* #1B2026 */
+	border-color: rgba(255, 255, 255, .1);
+}
+
+.row2 {
+	color: #474747;
+	background-color: rgba(255, 255, 255, .8);
+}
+
+.row3 {
+	color: #474747;
+	background-color: #FFFFFF;
+}
+
+.row4 {
+	color: #A8A7A6;
+	background-color: #1B2026;
+}
+
+.row5,
+.row5 a {
+	color: #A8A7A6;
+	background-color: #0F1620;
+}
+
+
+/* Content Area */
+.elements article i {
+	border-color: #15AD72;
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.elements article:hover i {
+	color: #FFFFFF;
+	background-color: #15AD72;
+}
+
+.testimonials article blockquote {
+	color: #474747;
+	background-color: #FFFFFF;
+}
+
+.testimonials article blockquote::before {
+	color: rgba(0, 0, 0, .1);
+}
+
+.latest article figure figcaption {
+	color: #FFFFFF;
+}
+
+.latest article figure figcaption time strong {
+	background-color: #1B2026;
+}
+
+.latest article figure figcaption time em {
+	background-color: #0F1620;
+}
+
+.latest article .txtwrap {
+	color: inherit;
+	background-color: #F8F8F8;
+}
+
+/* Tables + Comments */
+table,
+th,
+td,
+#comments .avatar,
+#comments input,
+#comments textarea {
+	border-color: #F4F4F4;
+}
+
+#comments input:focus,
+#comments textarea:focus,
+#comments *:required:focus {
+	border-color: #15AD72;
+}
+
+th {
+	color: #FFFFFF;
+	background-color: #373737;
+}
+
+tr,
+#comments li,
+#comments input[type="submit"],
+#comments input[type="reset"] {
+	color: inherit;
+	background-color: #FBFBFB;
+}
+
+tr:nth-child(even),
+#comments li:nth-child(even) {
+	color: inherit;
+	background-color: #F7F7F7;
+}
+
+table a,
+#comments a {
+	background-color: inherit;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport {
+	width: device-width;
+}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px) {
+	.hoc {
+		max-width: 978px;
+	}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px) {
+	.hoc {
+		max-width: 90%;
+	}
+
+	#header {
+		padding: 30px 0;
+	}
+
+	#header #logo {
+		margin: 0;
+	}
+
+	/* #mainav {} */
+
+	#mainav ul {
+		display: none;
+	}
+
+	#mainav form {
+		display: block;
+	}
+
+	/* #breadcrumb {} */
+
+	/* .container {} */
+
+	#comments input[type="reset"] {
+		margin-top: 10px;
+	}
+
+	.pagination li {
+		display: inline-block;
+		margin: 0 5px 5px 0;
+	}
+
+	/* #footer {} */
+
+	/* #copyright {} */
+
+	#copyright p:first-of-type {
+		margin-bottom: 10px;
+	}
+}
+
+
+@media screen and (max-width:750px) {
+
+	.imgl,
+	.imgr {
+		display: inline-block;
+		float: none;
+		margin: 0 0 10px 0;
+	}
+
+	.fl_left,
+	.fl_right {
+		display: block;
+		float: none;
+	}
+
+	.group .group>*:last-child,
+	.clear .clear>*:last-child,
+	.clear .group>*:last-child,
+	.group .clear>*:last-child {
+		margin-bottom: 0;
+	}
+
+	/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.one_half,
+	.one_third,
+	.two_third,
+	.one_quarter,
+	.two_quarter,
+	.three_quarter {
+		display: block;
+		float: none;
+		width: auto;
+		margin: 0 0 50px 0;
+		padding: 0;
+	}
+
+	#header {
+		text-align: center;
+	}
+
+	#header #logo {
+		margin-bottom: 15px;
+	}
+
+	#pageintro .transbox {
+		max-width: none;
+	}
+
+	.sectiontitle {
+		max-width: none;
+		text-align: left;
+	}
+
+	.latest article {
+		max-width: 320px;
+	}
+
+	#footer {
+		padding-bottom: 30px;
+	}
+
+	/* Not needed, just looks better. Compensates for the grid elements bottom margin when stacked */
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px) {
+	.scrollable {
+		display: block;
+		width: 100%;
+		margin: 0 0 30px 0;
+		padding: 0 0 15px 0;
+		overflow: auto;
+		overflow-x: scroll;
+	}
+
+	.scrollable table {
+		margin: 0;
+		padding: 0;
+		white-space: nowrap;
+	}
+
+	.inline li {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.pushright li {
+		margin-right: 0;
+	}
+
+	.font-x2 {
+		font-size: 1.4rem;
+	}
+
+	.font-x3 {
+		font-size: 1.6rem;
+	}
+}
+
+.fa-house {
+	margin-top: 1.5rem;
+	margin-left: 3rem;
+	margin-bottom: 1.5rem;
+	font-size: 3rem;
+	color: #dc3545;
+}
+
+a {
+	color: white;
+}
+
+button {
+	/* padding: 5px; */
+	border-radius: 19px;
+	border-color: transparent;
+	background-color: #20c997;
+	height: 40px;
+	width: 140px;
+	top: 5.7vh;
+}
+
+button:hover {
+	box-shadow: 1.5px 1.5px 1.5px 1.5px grey;
+	z-index: 10;
+}
+
+.edit-btn {
+	position: absolute;
+	padding: 5px;
+	border-radius: 19px;
+	border-color: transparent;
+	background-color: #20c997;
+	height: 40px;
+	width: 140px;
+	left: 10svw;
+	
+}

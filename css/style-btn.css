@@ -1,0 +1,25 @@
+.neon-button {
+    display: inline-block;
+    position:relative;
+    padding: 10px 20px;
+    background-color: rgb(184, 15, 15); /* Neon green color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgb(117, 117, 117); /* Neon green glow */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .neon-button:hover {
+    box-shadow: 0 8px 12px rgba(117, 117, 117); /* Increased glow on hover */
+  }
+
+  
